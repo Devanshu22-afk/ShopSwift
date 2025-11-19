@@ -18,6 +18,8 @@ const nextConfig = {
     // your project has type errors.
     ignoreBuildErrors: false,
   },
+  // Ensure output is correct for Vercel
+  distDir: '.next',
 };
 
 module.exports = nextConfig;
