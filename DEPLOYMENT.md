@@ -17,9 +17,9 @@
 3. Click **"Import"**
 
 ### 3. Configure Project Settings
-1. **Root Directory**: Set to `New Frontend`
+1. **Root Directory**: Set to `root`
    - Click "Edit" next to Root Directory
-   - Enter: `New Frontend`
+   - Enter: `root`
    - Click "Continue"
 
 2. **Framework Preset**: Should auto-detect as "Next.js"
@@ -102,7 +102,7 @@ Since your frontend needs a backend, here are options:
 2. Sign up with GitHub
 3. Create new project → Deploy from GitHub
 4. Select your ShopSwift repository
-5. Set root directory to project root (not New Frontend)
+5. Set root directory to project root (not frontend)
 6. Add PostgreSQL database
 7. Set environment variables for database
 8. Deploy!
@@ -126,7 +126,7 @@ Since your frontend needs a backend, here are options:
 
 - [ ] Vercel account created
 - [ ] Project imported from GitHub
-- [ ] Root directory set to `New Frontend`
+- [ ] Root directory set to `root`
 - [ ] Environment variable `NEXT_PUBLIC_API_URL` added
 - [ ] Backend deployed and accessible
 - [ ] CORS configured on backend to allow Vercel domain

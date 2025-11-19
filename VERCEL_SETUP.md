@@ -7,7 +7,7 @@
 2. Click on your **ShopSwift** project
 3. Go to **Settings** → **General**
 4. Scroll down to **Root Directory**
-5. **IMPORTANT**: Set it to `New Frontend` (not empty, not the repo root)
+5. **IMPORTANT**: Set it to `root` (not empty, not the repo root)
 6. Click **Save**
 
 ### Step 2: Redeploy After Changing Root Directory
@@ -32,7 +32,7 @@ Check the build logs to ensure:
 
 ### Issue 1: Root Directory Not Set
 **Symptom**: 404 error on all routes
-**Solution**: Set Root Directory to `New Frontend` in Vercel settings
+**Solution**: Set Root Directory to `root` in Vercel settings
 
 ### Issue 2: Wrong Branch
 **Symptom**: Old code is deployed
@@ -43,7 +43,7 @@ Check the build logs to ensure:
 **Solution**: Check build logs for errors and fix them
 
 ## Quick Fix Checklist:
-- [ ] Root Directory = `New Frontend`
+- [ ] Root Directory = `root`
 - [ ] Production Branch = `main`
 - [ ] Latest commit is deployed
 - [ ] Build completed successfully
@@ -56,7 +56,7 @@ Check the build logs to ensure:
    - Delete the current project
    - Click "Add New Project"
    - Import from GitHub again
-   - **Set Root Directory to `New Frontend` during import**
+   - **Set Root Directory to `root` during import**
    - Deploy
 
 2. **Check Vercel Build Logs:**
@@ -65,9 +65,9 @@ Check the build logs to ensure:
    - Look for any errors or warnings
 
 3. **Verify File Structure:**
-   - Make sure `New Frontend/src/app/page.tsx` exists
-   - Make sure `New Frontend/src/app/layout.tsx` exists
-   - Make sure `New Frontend/package.json` exists
+   - Make sure `root/src/app/page.tsx` exists
+   - Make sure `root/src/app/layout.tsx` exists
+   - Make sure `root/package.json` exists
 
 ## Contact Support:
 If none of the above works, the issue might be with Vercel's detection. Try:

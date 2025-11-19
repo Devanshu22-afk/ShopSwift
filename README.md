@@ -61,7 +61,7 @@ The backend will run on `http://localhost:8080`
 
 1. Navigate to the frontend directory:
 ```bash
-cd "New Frontend"
+cd root
 ```
 
 2. Install dependencies:
@@ -115,7 +115,7 @@ SpringEcom/
 │   ├── Repo/          # Repository Interfaces
 │   ├── config/        # Configuration Classes
 │   └── filter/        # JWT Filter
-├── New Frontend/      # Next.js Frontend
+├── root/          # Next.js Frontend
 │   ├── src/
 │   │   ├── app/       # Next.js App Router
 │   │   ├── components/ # React Components
@@ -126,7 +126,7 @@ SpringEcom/
 
 ## Environment Variables
 
-Create a `.env` file in the `New Frontend` directory:
+Create a `.env` file in the `root` directory:
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:8080/api
