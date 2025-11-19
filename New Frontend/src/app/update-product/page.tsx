@@ -43,6 +43,7 @@ const UpdateProductPage = () => {
       toast.error("Product ID is required");
       router.push("/");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated, user, authLoading, productId, router]);
 
   const fetchProduct = async () => {

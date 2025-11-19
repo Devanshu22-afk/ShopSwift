@@ -106,7 +106,7 @@ const PaymentForm = () => {
       </button>
       {!isAuthenticated && (
         <p className="text-sm mt-2 text-gray-600 text-center">
-          You'll be asked to login or register when you proceed to checkout
+          You&apos;ll be asked to login or register when you proceed to checkout
         </p>
       )}
     </div>

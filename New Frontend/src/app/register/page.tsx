@@ -87,7 +87,7 @@ const RegisterPage = () => {
               Create your account
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
-              Join Devanshu's Marketplace
+              Join Devanshu&apos;s Marketplace
             </p>
           </div>
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
