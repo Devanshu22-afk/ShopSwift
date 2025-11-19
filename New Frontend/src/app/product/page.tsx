@@ -2,7 +2,7 @@
 
 import Container from "@/components/Container";
 import { getSingleProduct, getTrendingProducts } from "@/helpers";
-import { Products } from "../../type";
+import { Products } from "../../../type";
 import ProductsData from "@/components/ProductsData";
 import SignleProduct from "@/components/SignleProduct";
 import { useEffect, useState } from "react";
