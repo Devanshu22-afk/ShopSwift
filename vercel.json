@@ -1,7 +1,0 @@
-{
-  "buildCommand": "cd \"New Frontend\" && npm install && npm run build",
-  "outputDirectory": "New Frontend/.next",
-  "installCommand": "cd \"New Frontend\" && npm install",
-  "framework": null
-}
-
