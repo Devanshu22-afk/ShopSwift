@@ -76,6 +76,21 @@ npm run dev
 
 The frontend will run on `http://localhost:3000`
 
+## Deployment
+
+### Frontend (Vercel)
+See `DEPLOYMENT.md` and `VERCEL_SETUP.md` for detailed frontend deployment instructions.
+
+### Backend (Render/Railway/Heroku)
+See `BACKEND_DEPLOYMENT.md` for comprehensive backend deployment guide, or `QUICK_START_BACKEND.md` for a quick 5-step setup.
+
+**Quick Summary:**
+1. Deploy PostgreSQL database (Render, Railway, or cloud provider)
+2. Deploy Spring Boot backend (Render recommended)
+3. Configure environment variables (database URL, CORS origins)
+4. Update frontend `NEXT_PUBLIC_API_URL` in Vercel
+5. Test the connection
+
 ## Default Credentials
 
 ### Admin Login
