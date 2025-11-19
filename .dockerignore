@@ -1,0 +1,14 @@
+target/
+.mvn/
+.idea/
+.vscode/
+*.iml
+*.log
+.git/
+.gitignore
+node_modules/
+Frontend/
+root/
+*.md
+!README.md
+
