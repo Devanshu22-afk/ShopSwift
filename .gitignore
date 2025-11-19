@@ -1,0 +1,63 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Sensitive Files ###
+# Application properties with database credentials
+src/main/resources/application.properties
+
+### Frontend ###
+# Node modules
+node_modules/
+New Frontend/node_modules/
+Frontend/node_modules/
+
+# Build outputs
+New Frontend/.next/
+New Frontend/out/
+New Frontend/build/
+Frontend/dist/
+Frontend/build/
+
+# Environment files
+.env
+.env.local
+.env*.local
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+__MACOSX/
+**/__MACOSX/
+*.zip
