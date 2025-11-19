@@ -12,7 +12,7 @@ const LoginPage = () => {
     password: "",
   });
   const [loading, setLoading] = useState(false);
-  const { login, adminLogin, isAuthenticated } = useAuth();
+  const { login, isAuthenticated } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
@@ -39,17 +39,6 @@ const LoginPage = () => {
     setLoading(false);
   };
 
-  const handleAdminLogin = async () => {
-    setLoading(true);
-    const result = await adminLogin();
-    if (result.success) {
-      toast.success(result.message || "Admin login successful!");
-      router.push("/");
-    } else {
-      toast.error(result.message || "Admin login failed");
-    }
-    setLoading(false);
-  };
 
   return (
     <Container>
@@ -104,17 +93,6 @@ const LoginPage = () => {
                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50"
               >
                 {loading ? "Signing in..." : "Sign in"}
-              </button>
-            </div>
-
-            <div className="text-center">
-              <button
-                type="button"
-                onClick={handleAdminLogin}
-                disabled={loading}
-                className="text-sm text-orange-600 hover:text-orange-500 disabled:opacity-50"
-              >
-                Login as Admin
               </button>
             </div>
 

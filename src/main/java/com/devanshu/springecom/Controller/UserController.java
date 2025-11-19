@@ -128,8 +128,9 @@ public class UserController {
                     .body(new LoginResponse("Password cannot be empty", false, null, null));
             }
 
-            String adminUsername = "admin";
-            String adminPassword = "admin123";
+            // Hardcoded secure admin credentials
+            String adminUsername = "ShopSwiftAdmin2024";
+            String adminPassword = "SecureAdmin@2024!";
 
             if (!adminUsername.equals(request.username()) || !adminPassword.equals(request.password())) {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED)

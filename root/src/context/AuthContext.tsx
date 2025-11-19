@@ -93,14 +93,17 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const adminLogin = async () => {
+    // Hardcoded admin credentials - not exposed in UI
+    // Username: ShopSwiftAdmin2024
+    // Password: SecureAdmin@2024!
     try {
       const response = await API.post("/admin/login", {
-        username: "admin",
-        password: "admin123",
+        username: "ShopSwiftAdmin2024",
+        password: "SecureAdmin@2024!",
       });
       if (response.data && response.data.token) {
         localStorage.setItem("token", response.data.token);
-        localStorage.setItem("username", "admin");
+        localStorage.setItem("username", "ShopSwiftAdmin2024");
         localStorage.setItem("isAuthenticated", "true");
         localStorage.setItem("role", "ADMIN");
         await checkAuth();
